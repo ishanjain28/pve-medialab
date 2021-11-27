@@ -6,7 +6,7 @@
 
 #---- Bash command to run script ---------------------------------------------------
 
-#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/pve_medialab_ct_kodirsync_addclient_installer.sh)"
+#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/pve_medialab_ct_kodirsync_addclient_installer.sh)"
 
 #---- Source -----------------------------------------------------------------------
 #---- Dependencies -----------------------------------------------------------------
@@ -36,7 +36,7 @@ fi
 # Git server
 GIT_SERVER='https://github.com'
 # Git user
-GIT_USER='ahuacate'
+GIT_USER='ishanjain28'
 # Git repository
 GIT_REPO='pve-medialab'
 # Git branch

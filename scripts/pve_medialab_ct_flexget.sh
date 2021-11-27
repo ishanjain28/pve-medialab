@@ -6,7 +6,7 @@
 
 #---- Bash command to run script ---------------------------------------------------
 
-#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/scripts/pve_medialab_ct_flexget.sh)"
+#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/scripts/pve_medialab_ct_flexget.sh)"
 
 #---- Source -----------------------------------------------------------------------
 
@@ -188,7 +188,7 @@ section "Install ${CT_HOSTNAME_VAR^} software"
   
 # For configuring ${CT_HOSTNAME_VAR^} we have instructions:
 
-#   --  ${WHITE}https://github.com/ahuacate/lidarr${NC}"
+#   --  ${WHITE}https://github.com/ishanjain28/lidarr${NC}"
 # echo
 
 # Cleanup

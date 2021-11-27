@@ -6,7 +6,7 @@
 
 #---- Bash command to run script ---------------------------------------------------
 
-#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/scripts/pve_medialab_ct_jellyfin.sh)"
+#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/scripts/pve_medialab_ct_jellyfin.sh)"
 
 #---- Source -----------------------------------------------------------------------
 
@@ -212,7 +212,7 @@ msg "Success. ${CT_HOSTNAME_VAR^} installation has completed. Web-interface is a
 
 More information about configuring ${CT_HOSTNAME_VAR^} is available here:
 
-  --  ${WHITE}https://github.com/ahuacate/jellyfin${NC}"
+  --  ${WHITE}https://github.com/ishanjain28/jellyfin${NC}"
 echo
 
 # Cleanup

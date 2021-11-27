@@ -7,10 +7,10 @@
 #---- Bash command to run script ---------------------------------------------------
 
 #---- Source Github
-# bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/pve_medialab_ct_ahuabooks_installer.sh)"
+# bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/pve_medialab_ct_ahuabooks_installer.sh)"
 
 #---- Source local Git
-# /mnt/pve/nas-01-git/ahuacate/pve-medialab/pve_medialab_ct_ahuabooks_installer.sh
+# /mnt/pve/nas-01-git/ishanjain28/pve-medialab/pve_medialab_ct_ahuabooks_installer.sh
 
 #---- Source -----------------------------------------------------------------------
 #---- Dependencies -----------------------------------------------------------------
@@ -38,7 +38,7 @@ rm ${REPO_TEMP}/${GIT_REPO}.tar.gz &> /dev/null
 # Git server
 GIT_SERVER='https://github.com'
 # Git user
-GIT_USER='ahuacate'
+GIT_USER='ishanjain28'
 # Git repository
 GIT_REPO='pve-medialab'
 # Git branch

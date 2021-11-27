@@ -6,7 +6,7 @@
 
 #---- Bash command to run script ---------------------------------------------------
 
-#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/scripts/pve_medialab_ct_ahuabooks.sh)"
+#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/scripts/pve_medialab_ct_ahuabooks.sh)"
 
 #---- Source -----------------------------------------------------------------------
 
@@ -500,7 +500,7 @@ Podgrab
   --  ${WHITE}http://$CT_IP:4041${NC} ( password:none set )\n
   --  ${WHITE}http://${CT_HOSTNAME}:4041${NC}
 
-For configuring all Ahuabooks applications read our instructions: ${WHITE}https://github.com/ahuacate/ahuabooks${NC}"
+For configuring all Ahuabooks applications read our instructions: ${WHITE}https://github.com/ishanjain28/ahuabooks${NC}"
 
 # Cleanup
 trap cleanup EXIT

@@ -6,7 +6,7 @@
 
 #---- Bash command to run script ---------------------------------------------------
 
-#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/scripts/pve_medialab_ct_jackett.sh)"
+#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/scripts/pve_medialab_ct_jackett.sh)"
 
 #---- Source -----------------------------------------------------------------------
 
@@ -51,7 +51,7 @@ DEV_GIT_MOUNT_ENABLE=1
 # Git server
 GIT_SERVER='https://github.com'
 # Git user
-GIT_USER='ahuacate'
+GIT_USER='ishanjain28'
 # Git repository
 GIT_REPO='pve-medialab'
 # Git branch

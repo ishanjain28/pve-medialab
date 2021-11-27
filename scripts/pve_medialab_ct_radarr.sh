@@ -6,7 +6,7 @@
 
 #---- Bash command to run script ---------------------------------------------------
 
-#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/scripts/pve_medialab_ct_radarr.sh)"
+#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/scripts/pve_medialab_ct_radarr.sh)"
 
 #---- Source -----------------------------------------------------------------------
 
@@ -217,7 +217,7 @@ echo
 #---- Copy App settings file to NAS
 if [ -f ${DIR}/source/pve_medialab_ct_${CT_HOSTNAME_VAR}_settings/${CT_HOSTNAME_VAR}_backup_*_0000.00.00_00.00.00.zip ]; then
   pct exec $CTID -- runuser ${APP_USERNAME} -c "mkdir -p /mnt/backup/${CT_HOSTNAME_VAR}/manual"
-  # Copy Radarr backup ahuacate base file to NAS
+  # Copy Radarr backup ishanjain28 base file to NAS
   BACKUP_FILE=$(find ${DIR}/source/pve_medialab_ct_${CT_HOSTNAME_VAR}_settings -name *_0000.00.00_00.00.00.zip -type f -exec basename {} 2> /dev/null \;)
   pct exec $CTID -- runuser ${APP_USERNAME} -c "mkdir -p /home/media/.config/Radarr/Backups/manual"
   pct push $CTID ${DIR}/source/pve_medialab_ct_${CT_HOSTNAME_VAR}_settings/${BACKUP_FILE} /home/media/.config/Radarr/Backups/manual/${BACKUP_FILE}
@@ -243,7 +243,7 @@ The file includes:
   --  Custom Formats: Primarily for audio
   --  Indexers sets: Jackett
   --  Download Client sets: Default Deluge and NZBGet
-  --  API key set ( so all Ahuacate medialab CTs can communicate )
+  --  API key set ( so all ishanjain28 medialab CTs can communicate )
   --  Backup set: /mnt/backup/radarr ( all backups stored on NAS )
 
 We recommend you install our presets because it saves time. Check the server IP addresses of your Download Clients and Indexers, and configure any Usenet Indexers.\n"

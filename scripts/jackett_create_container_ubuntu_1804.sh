@@ -60,7 +60,7 @@ TEMP_DIR=$(mktemp -d)
 pushd $TEMP_DIR >/dev/null
 
 # Download setup script
-wget -qL https://github.com/ahuacate/proxmox-lxc-media/raw/master/scripts/jackett_setup_ubuntu_1804.sh
+wget -qL https://github.com/ishanjain28/proxmox-lxc-media/raw/master/scripts/jackett_setup_ubuntu_1804.sh
 
 # Detect modules and automatically load at boot
 load_module aufs
@@ -126,7 +126,7 @@ info "Container hostname is $HOSTNAME."
 echo
 
 # Set container password
-read -p "Enter container root password: " -e -i ahuacate PWD
+read -p "Enter container root password: " -e -i ishanjain28 PWD
 info "Container root password is '$PWD'."
 echo
 

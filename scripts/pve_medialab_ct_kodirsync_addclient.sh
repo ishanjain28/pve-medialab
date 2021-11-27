@@ -6,7 +6,7 @@
 
 #---- Bash command to run script ---------------------------------------------------
 
-#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/scripts/pve_medialab_ct_kodirsync_addclient.sh)"
+#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/scripts/pve_medialab_ct_kodirsync_addclient.sh)"
 
 #---- Source -----------------------------------------------------------------------
 
@@ -1116,9 +1116,9 @@ To: $(grep -r "root=.*" /etc/ssmtp/ssmtp.conf | grep -v "#" | sed -e 's/root=//g
 From: donotreply@kodirsync_server.local
 Subject: Kodirsync installation package for user: ${USERNAME}
 Mime-Version: 1.0
-Content-Type: multipart/mixed; boundary="ahuacate"
+Content-Type: multipart/mixed; boundary="ishanjain28"
 
---ahuacate
+--ishanjain28
 Content-Type: text/html
 <h3><strong>---- Kodirsync Installation Package</strong></h3>
 <p><strong>Client Account Username</strong> : ${USERNAME}</p>
@@ -1144,7 +1144,7 @@ $(if [ ${MUSICVIDEO_ENABLED} = 0 ]; then echo "<li>Music Videos</li>"; fi)
 $(if [ ${PHOTO_ENABLED} = 0 ]; then echo "<li>Photo collections</li>"; fi)
 $(if [ ${PRON_ENABLED} = 0 ]; then echo "<li>Pron Videos</li>"; fi)
 $(if [ ${SERIES_ENABLED} = 0 ]; then echo "<li>Series (TV)</li>"; fi)
-<p>More information about Kodirsync and our Medialab collection of Proxmox software containers is available on our <a href="https://github.com/ahuacate" target="_blank">GitHub</a> page.</p>
+<p>More information about Kodirsync and our Medialab collection of Proxmox software containers is available on our <a href="https://github.com/ishanjain28" target="_blank">GitHub</a> page.</p>
 <hr />
 <h3><strong>Installation Instructions</strong></h3>
 <h4><strong>STEP 1 : Copy 'kodirsync_installpackage.tar.gz' to your client device</strong></h4>
@@ -1160,7 +1160,7 @@ $(if [ ${SERIES_ENABLED} = 0 ]; then echo "<li>Series (TV)</li>"; fi)
 <h4><strong>STEP 2 : Install Kodirsync on your client device</strong></h4>
 <p>SSH into your client device as root. Type the following command (or copy &amp; paste) in your SSH terminal:</p>
 <div style="width:800px; border: 1px solid #000;">
-<p style="padding-left: 40px;"><span style="color: #333333;">bash -c "\$(wget -qO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/scripts/source/pve_medialab_kodirsync_clientapp_installer.sh)"</span></p>
+<p style="padding-left: 40px;"><span style="color: #333333;">bash -c "\$(wget -qO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/scripts/source/pve_medialab_kodirsync_clientapp_installer.sh)"</span></p>
 </div>
 <p>The above command will run our Kodirsync device installer. Follow the prompts.</p>
 <h3>---- Attachment Details</h3>
@@ -1174,13 +1174,13 @@ $(if [ ${SERIES_ENABLED} = 0 ]; then echo "<li>Series (TV)</li>"; fi)
 </ol>
 <p>A backup copy of your '<em>kodirsync_installerpackage.tar.gz</em>' package is stored on the Kodirsync server at: ${HOME_BASE}${USERNAME}."</p>
 
---ahuacate
+--ishanjain28
 Content-Type: application/gzip
 Content-Disposition: attachment; filename="kodirsync_installerpackage.tar.gz"
 Content-Transfer-Encoding: base64
 
 $(openssl base64 < ${HOME_BASE}${USERNAME}/kodirsync_installerpackage.tar.gz)
---ahuacate
+--ishanjain28
 EOF
 if [ $(dpkg -s ssmtp >/dev/null 2>&1; echo $?) = 0 ] && [ $(grep -qs "^root:*" /etc/ssmtp/revaliases >/dev/null; echo $?) = 0 ]; then
   msg "You can email a pre-configured Kodirsync installation package to your system’s administrator (Recommended). Our installation package contains all files to build and configure a '${USERNAME}' Kodirsync client. The system administrator can then forward this installation package including our instructions to the end user."

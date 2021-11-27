@@ -7,10 +7,10 @@
 #---- Bash command to run script ---------------------------------------------------
 
 #---- Source Github
-# bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/pve_medialab_ct_jellyfin_installer.sh)"
+# bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/pve_medialab_ct_jellyfin_installer.sh)"
 
 #---- Source local Git
-# /mnt/pve/nas-01-git/ahuacate/pve-medialab/pve_medialab_ct_jellyfin_installer.sh
+# /mnt/pve/nas-01-git/ishanjain28/pve-medialab/pve_medialab_ct_jellyfin_installer.sh
 
 #---- Source -----------------------------------------------------------------------
 #---- Dependencies -----------------------------------------------------------------

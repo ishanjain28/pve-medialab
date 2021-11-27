@@ -91,7 +91,7 @@ sed -i 's|"APIKey":.*|"APIKey": "s9tcqkddvjpkmis824pp6ucgpwcd2xnc",|g' /home/med
 
 # Downloading and Installing preconfigured Indexers
 msg "Installing preconfigured Jackett indexers..."
-svn checkout https://github.com/ahuacate/jackett/trunk/Indexers /home/media/.config/Jackett/Indexers
+svn checkout https://github.com/ishanjain28/jackett/trunk/Indexers /home/media/.config/Jackett/Indexers
 chown 1605:65605 {/home/media/.config/Jackett/Indexers/*.json,/home/media/.config/Jackett/Indexers/*.bak}
 sudo systemctl restart jackett
 

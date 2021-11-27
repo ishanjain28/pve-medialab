@@ -6,7 +6,7 @@
 
 #---- Bash command to run script ---------------------------------------------------
 
-#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/scripts/pve_medialab_ct_kodirsync.sh)"
+#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/scripts/pve_medialab_ct_kodirsync.sh)"
 
 #---- Source -----------------------------------------------------------------------
 
@@ -229,7 +229,7 @@ You can now create Kodirsync clients by running the the following command inside
       ${WHITE}pct enter $CTID${NC}
 
   --  Step 2 : Run the following CLI command inside your 'Kodirsync' CT
-      ${WHITE}bash -c \"\$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/pve_medialab_ct_kodirsync_addclient_installer.sh)\"${NC}"
+      ${WHITE}bash -c \"\$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/pve_medialab_ct_kodirsync_addclient_installer.sh)\"${NC}"
 echo
 
 # Cleanup

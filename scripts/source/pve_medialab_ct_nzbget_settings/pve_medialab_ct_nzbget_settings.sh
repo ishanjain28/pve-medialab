@@ -23,11 +23,11 @@ pct exec $CTID -- sed -i '/^ControlPort=.*/c\ControlPort=6789' /opt/nzbget/nzbge
 
 # Restricted user access (connect to NZBGet from other programs)
 pct exec $CTID -- sed -i '/^RestrictedUsername=.*/c\RestrictedUsername=appconnect' /opt/nzbget/nzbget.conf
-pct exec $CTID -- sed -i '/^RestrictedPassword=.*/c\RestrictedPassword=ahuacate' /opt/nzbget/nzbget.conf
+pct exec $CTID -- sed -i '/^RestrictedPassword=.*/c\RestrictedPassword=ishanjain28' /opt/nzbget/nzbget.conf
 
 # Add username and password for RPC Access
 pct exec $CTID -- sed -i "/AddUsername=/c\AddUsername=appconnect" /opt/nzbget/nzbget.conf
-pct exec $CTID -- sed -i "/AddPassword=/c\AddPassword=ahuacate" /opt/nzbget/nzbget.conf
+pct exec $CTID -- sed -i "/AddPassword=/c\AddPassword=ishanjain28" /opt/nzbget/nzbget.conf
 
 # Set User Daemon
 pct exec $CTID -- sed -i '/^DaemonUsername=.*/c\DaemonUsername=media' /opt/nzbget/nzbget.conf

@@ -8,7 +8,7 @@
 #---- Static Variables -------------------------------------------------------------
 
 # SSH account details
-RSYNC_Username='ahuacate_kodirsync'
+RSYNC_Username='ishanjain28_kodirsync'
 
 # SSH connection type
 # 1 for HTTPS URL, 2 for LAN connection

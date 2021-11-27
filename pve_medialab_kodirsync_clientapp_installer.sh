@@ -6,7 +6,7 @@
 
 #---- Bash command to run script ---------------------------------------------------
 
-#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/pve_medialab_kodirsync_clientapp_installer.sh)"
+#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/pve_medialab_kodirsync_clientapp_installer.sh)"
 
 #---- Source -----------------------------------------------------------------------
 

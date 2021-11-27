@@ -28,7 +28,7 @@ pct push $CTID ${DIR}/source/pve_medialab_ct_deluge_settings/autoremoveplus.conf
 pct push $CTID ${DIR}/source/pve_medialab_ct_deluge_settings/autoadd.conf /home/media/.config/deluge/autoadd.conf --group 65605 --user 1605
 
 # Configure Deluge Auth
-pct exec $CTID -- bash -c 'echo -e "appconnect:ahuacate:10" >> /home/media/.config/deluge/auth'
+pct exec $CTID -- bash -c 'echo -e "appconnect:ishanjain28:10" >> /home/media/.config/deluge/auth'
 
 # Install Post Processing scripts
 pct push $CTID ${DIR}/source/pve_medialab_ct_deluge_settings/deluge-postprocess.sh /home/media/.config/deluge/deluge-postprocess.sh --group 65605 --user 1605 --perms 0775

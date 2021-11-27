@@ -6,7 +6,7 @@
 
 #---- Bash command to run script ---------------------------------------------------
 
-#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/scripts/pve_medialab_ct_deluge.sh)"
+#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/scripts/pve_medialab_ct_deluge.sh)"
 
 #---- Source -----------------------------------------------------------------------
 
@@ -262,7 +262,7 @@ msg "Success. ${CT_HOSTNAME_VAR^} installed into /opt/${CT_HOSTNAME_VAR}. Web-in
   
 For configuring ${CT_HOSTNAME_VAR^} we have instructions:
 
-  --  ${WHITE}https://github.com/ahuacate/deluge${NC}"
+  --  ${WHITE}https://github.com/ishanjain28/deluge${NC}"
 echo
 
 # Cleanup

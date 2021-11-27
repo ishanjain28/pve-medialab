@@ -24,7 +24,7 @@ fi
 
 # Set API key
 # pct exec $CTID -- sed -i 's/"APIKey":.*/"APIKey": "s9tcqkddvjpkmis824pp6ucgpwcd2xnc",/g' /home/media/.config/Jackett/ServerConfig.json
-pct exec $CTID -- sed -i 's/"APIKey":.*/"APIKey": "ahuacate",/g' /home/media/.config/Jackett/ServerConfig.json
+pct exec $CTID -- sed -i 's/"APIKey":.*/"APIKey": "ishanjain28",/g' /home/media/.config/Jackett/ServerConfig.json
 
 # Create & set download blackhole folder
 pct exec $CTID -- runuser media -c 'mkdir -p /mnt/public/autoadd/torrent/unsorted'

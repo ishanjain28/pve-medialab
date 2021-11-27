@@ -6,7 +6,7 @@
 
 #---- Bash command to run script ---------------------------------------------------
 
-#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/pve-medialab/master/scripts/pve_medialab_ct_jellyfin.sh)"
+#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/pve-medialab/master/scripts/pve_medialab_ct_jellyfin.sh)"
 
 #---- Source -----------------------------------------------------------------------
 
@@ -21,5 +21,5 @@ echo $COMMON_PVE_SOURCE
 #########################################################################################
 
 # Command to run script
-#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ahuacate/proxmox-lxc-media/master/scripts/jellyfin_create_ct_18.04.sh)"
+#bash -c "$(wget -qLO - https://raw.githubusercontent.com/ishanjain28/proxmox-lxc-media/master/scripts/jellyfin_create_ct_18.04.sh)"
 
