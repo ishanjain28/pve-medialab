@@ -147,6 +147,9 @@ source ${COMMON_PVE_SOURCE}/pvesource_ct_medialab_vaapipassthru.sh
 #---- Configure New CT OS
 source ${COMMON_PVE_SOURCE}/pvesource_ct_ubuntubasics.sh
 
+#---- Create MediaLab Group and User
+source ${COMMON_PVE_SOURCE}/pvesource_ct_ubuntu_addmedialabuser.sh
+
 #---- Jellyfin ---------------------------------------------------------------------
 
 section "Installing ${CT_HOSTNAME_VAR^} software."
