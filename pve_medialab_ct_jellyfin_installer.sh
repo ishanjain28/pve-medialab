@@ -39,7 +39,7 @@ rm ${REPO_TEMP}/${GIT_REPO}.tar.gz &> /dev/null
 # Git server
 GIT_SERVER='https://github.com'
 # Git user
-GIT_USER='ahuacate'
+GIT_USER='ishanjain28'
 # Git repository
 GIT_REPO='pve-medialab'
 # Git branch

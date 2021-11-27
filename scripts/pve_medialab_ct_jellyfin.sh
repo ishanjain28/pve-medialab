@@ -30,9 +30,9 @@ source ${COMMON_PVE_SOURCE}/pvesource_bash_defaults.sh
 
 #---- Static Variables -------------------------------------------------------------
 
-# Set Max CT Host CPU Cores 
+# Set Max CT Host CPU Cores
 HOST_CPU_CORES=$(( $(lscpu | grep -oP '^Socket.*:\s*\K.+') * ($(lscpu | grep -oP '^Core.*:\s*\K.+') * $(lscpu | grep -oP '^Thread.*:\s*\K.+')) ))
-if [ ${HOST_CPU_CORES} -gt 4 ]; then 
+if [ ${HOST_CPU_CORES} -gt 4 ]; then
   CT_CPU_CORES_VAR=$(( ${HOST_CPU_CORES} / 2 ))
 elif [ ${HOST_CPU_CORES} -le 4 ]; then
   CT_CPU_CORES_VAR=2
@@ -48,7 +48,7 @@ DEV_GIT_MOUNT_ENABLE=1
 # Git server
 GIT_SERVER='https://github.com'
 # Git user
-GIT_USER='ahuacate'
+GIT_USER='ishanjain28'
 # Git repository
 GIT_REPO='pve-medialab'
 # Git branch
@@ -200,7 +200,7 @@ info "Jellyfin GUID is set: ${YELLOW}$(pct exec $CTID -- id -g jellyfin)${NC}"
 echo
 
 #---- Create App settings backup folder on NAS
-pct exec $CTID -- runuser ${APP_USERNAME} -c "mkdir -p /mnt/backup/${CT_HOSTNAME_VAR}"
+#pct exec $CTID -- runuser ${APP_USERNAME} -c "mkdir -p /mnt/backup/${CT_HOSTNAME_VAR}"
 
 #---- Finish Line ------------------------------------------------------------------
 section "Completion Status."
@@ -209,7 +209,7 @@ msg "Success. ${CT_HOSTNAME_VAR^} installation has completed. Web-interface is a
 
   --  ${WHITE}http://$CT_IP:8096/${NC}\n
   --  ${WHITE}http://${CT_HOSTNAME}:8096/${NC}
-  
+
 More information about configuring ${CT_HOSTNAME_VAR^} is available here:
 
   --  ${WHITE}https://github.com/ahuacate/jellyfin${NC}"
